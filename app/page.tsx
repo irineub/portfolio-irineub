@@ -40,7 +40,7 @@ export default function Page() {
           <li>
             <strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS<br/>
             (Contrato PJ) Manaus-AM (Remoto)<br/>
-            Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas públicos de faturamento (SUS) e em melhorias contínuas para clínicas e laboratórios.
+            Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas de faturamento para o (SUS) e em melhorias contínuas para clínicas e laboratórios.
           </li>
         </ul>
       </section>
