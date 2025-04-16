@@ -5,7 +5,7 @@ export default function Page() {
     <section className="p-4">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold tracking-tight">
-          Portfólio de Irineu Brito
+          Irineu Brito
         </h1>
         <a href="/en" className="text-sm text-blue-600 underline">
           EN
@@ -22,10 +22,10 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
-          <li><strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA</li>
-          <li><strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)</li>
-          <li><strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM</li>
-          <li><strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS</li>
+          <li><strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA <br/> Manaus-AM (Presencial)</li>
+          <li><strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)<br/> Jerusalém,Israel (Remoto)</li>
+          <li><strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM <br/> Manaus-AM (Remoto)</li>
+          <li><strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS <br/> Manaus-AM (Remoto)</li>
         </ul>
       </section>
 
