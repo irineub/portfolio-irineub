@@ -22,10 +22,26 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
-          <li><strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA <br/> Manaus-AM (Presencial)</li>
-          <li><strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)<br/> Jerusalém,Israel (Remoto)</li>
-          <li><strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM <br/> Manaus-AM (Remoto)</li>
-          <li><strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS <br/> Manaus-AM (Remoto)</li>
+          <li>
+            <strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA<br/>
+            Manaus-AM (Presencial)<br/>
+            Atuo no desenvolvimento de ferramentas internas em Python voltadas à automação de processos e fluxos de trabalho. Construí pipelines de dados para alimentar modelos de linguagem (LLMs), aplicando técnicas de NLP e análise de dados com Pandas. Participei da concepção de uma plataforma integrada de IA, além de realizar ajustes finos em modelos para respostas contextuais.
+          </li>
+          <li>
+            <strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
+            Jerusalém, Israel (Remoto)<br/>
+            Desenvolvi aplicações fullstack utilizando Angular, NestJS e Typescript. Integrei serviços de mensageria (Sendinblue), gerenciei recursos no GCP e implementei funcionalidades de internacionalização (i18n) para suportar múltiplos idiomas. Colaborei com equipes internacionais em ambiente ágil e remoto.
+          </li>
+          <li>
+            <strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM<br/>
+            Manaus-AM (Remoto)<br/>
+            Participei de diversos projetos desenvolvendo soluções fullstack com React, Angular, Node.js, NestJS e Python. Trabalhei com integração de e-commerce via WooCommerce, LLMs para processamento de dados com imagens (Gemini) e deploy de infraestrutura em AWS (EC2, S3, CloudFront). Automatizei ambientes com Docker e gerenciei banco de dados PostgreSQL.
+          </li>
+          <li>
+            <strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS<br/>
+            Manaus-AM (Remoto)<br/>
+            Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas públicos de faturamento (SUS) e em melhorias contínuas para clínicas e laboratórios.
+          </li>
         </ul>
       </section>
 
@@ -43,26 +59,8 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Certificações</h2>
         <ul className="list-disc ml-5">
-          <li>
-            <a
-              className="text-blue-600 underline"
-              href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1061807"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Scrum Fundamentals Certified
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-blue-600 underline"
-              href="https://cert.efset.org/tApNGj"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              EF SET – C2 Proficient
-            </a>
-          </li>
+          <li><a className="text-blue-600 underline" href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1061807" target="_blank" rel="noopener noreferrer">Scrum Fundamentals Certified (SFC)</a></li>
+          <li><a className="text-blue-600 underline" href="https://cert.efset.org/tApNGj" target="_blank" rel="noopener noreferrer">EF SET English Certificate – Score: 81/100 (C2 Proficient)</a></li>
         </ul>
       </section>
 
@@ -75,48 +73,14 @@ export default function Page() {
         <h2 className="text-xl font-semibold">Idiomas</h2>
         <ul className="list-disc ml-5">
           <li>Português (Nativo)</li>
-          <li>Inglês (C2)</li>
+          <li>Inglês (C2 – Proficiente)</li>
           <li>Espanhol (Básico)</li>
         </ul>
       </section>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold">Contato</h2>
-        <ul className="list-disc ml-5">
-          <li>
-            <a
-              className="text-blue-600 underline"
-              href="mailto:irineutech2025@gmail.com"
-            >
-              irineutech2025@gmail.com
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-blue-600 underline"
-              href="https://www.linkedin.com/in/irineu-brito/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-blue-600 underline"
-              href="https://github.com/irineub"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section className="mb-6">
-        # <h2 className="text-xl font-semibold">Últimos Posts</h2>
-        # <BlogPosts />
+        <h2 className="text-xl font-semibold">Projetos e Publicações</h2>
+        <BlogPosts />
       </section>
     </section>
   )
