@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   description: 'Aqui você encontra mais informações sobre mim.',
   openGraph: {
-    title: 'Portfolio Irineu Brito,
+    title: 'Portfolio Irineu Brito',
     description: 'Aqui você encontra mais informações sobre mim.',
     url: baseUrl,
     siteName: 'My Portfolio',
