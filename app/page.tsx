@@ -23,7 +23,7 @@ export default function Page() {
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
           <li>
-            <strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA<br/>
+            <strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA (Estágio) <br/> Meio-Periodo -
             Manaus-AM (Presencial)<br/>
             Atuo no desenvolvimento de ferramentas internas em Python voltadas à automação de processos e fluxos de trabalho. Construí pipelines de dados para alimentar modelos de linguagem (LLMs), aplicando técnicas de NLP e análise de dados com Pandas. Participei da concepção de uma plataforma integrada de IA, além de realizar ajustes finos em modelos para respostas contextuais.
           </li>
