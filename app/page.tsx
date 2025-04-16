@@ -78,10 +78,7 @@ export default function Page() {
         </ul>
       </section>
 
-      <section className="mb-6">
-##        <h2 className="text-xl font-semibold">Projetos e Publicações</h2>
-##        <BlogPosts />
-      </section>
+     
     </section>
   )
 }
