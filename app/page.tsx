@@ -116,7 +116,7 @@ export default function Page() {
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Últimos Posts</h2>
-        <BlogPosts />
+        #<BlogPosts />
       </section>
     </section>
   )
