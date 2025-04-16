@@ -52,7 +52,7 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} Irineu Brito · MIT Licensed
+        © {new Date().getFullYear()} Irineu Brito · 
       </p>
     </footer>
   )
