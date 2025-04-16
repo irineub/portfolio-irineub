@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: 'Irineu Brito',
     template: '%s | Next.js Portfolio Starter',
   },
-  description: 'This is my portfolio.',
+  description: 'Aqui você encontra mais informações sobre mim.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Portfolio Irineu Brito,
+    description: 'Aqui você encontra mais informações sobre mim.',
     url: baseUrl,
     siteName: 'My Portfolio',
     locale: 'en_US',
