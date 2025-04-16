@@ -79,8 +79,8 @@ export default function Page() {
       </section>
 
       <section className="mb-6">
-        <h2 className="text-xl font-semibold">Projetos e Publicações</h2>
-        <BlogPosts />
+##        <h2 className="text-xl font-semibold">Projetos e Publicações</h2>
+##        <BlogPosts />
       </section>
     </section>
   )
