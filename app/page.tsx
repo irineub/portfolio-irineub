@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import { BlogPosts } from 'app/components/posts'
 
