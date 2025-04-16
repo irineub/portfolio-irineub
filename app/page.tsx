@@ -29,17 +29,17 @@ export default function Page() {
           </li>
           <li>
             <strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
-            Jerusalém, Israel (Remoto)<br/>
+  (Free-lance PJ)         Jerusalém, Israel (Remoto)<br/>
             Desenvolvi aplicações fullstack utilizando Angular, NestJS e Typescript. Integrei serviços de mensageria (Sendinblue), gerenciei recursos no GCP e implementei funcionalidades de internacionalização (i18n) para suportar múltiplos idiomas. Colaborei com equipes internacionais em ambiente ágil e remoto.
           </li>
           <li>
             <strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM<br/>
-            Manaus-AM (Remoto)<br/>
+           (Contrato PJ) Manaus-AM (Remoto)<br/>
             Participei de diversos projetos desenvolvendo soluções fullstack com React, Angular, Node.js, NestJS e Python. Trabalhei com integração de e-commerce via WooCommerce, LLMs para processamento de dados com imagens (Gemini) e deploy de infraestrutura em AWS (EC2, S3, CloudFront). Automatizei ambientes com Docker e gerenciei banco de dados PostgreSQL.
           </li>
           <li>
             <strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS<br/>
-            Manaus-AM (Remoto)<br/>
+            (Contrato PJ) Manaus-AM (Remoto)<br/>
             Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas públicos de faturamento (SUS) e em melhorias contínuas para clínicas e laboratórios.
           </li>
         </ul>
