@@ -40,17 +40,17 @@ export default function Page() {
             Working on developing internal Python tools focused on process automation and workflows. Built data pipelines to feed language models (LLMs), applying NLP techniques and data analysis with Pandas. Participated in the conception of an integrated AI platform, as well as fine-tuning models for contextual responses.
           </li>
           <li className='mb-5'>
-            <strong>Vizo.dev</strong> (01/2025 - 04/2025 - 4 months) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
+            <strong>Vizo.dev</strong> (01/2025 - 04/2025  [4 months]) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
             (Freelance) Jerusalem, Israel (Remote)<br/>
             Developed fullstack applications using Angular, NestJS, and Typescript. Integrated messaging services (Sendinblue), managed GCP resources, and implemented internationalization (i18n) features to support multiple languages. Collaborated with international teams in an agile and remote environment.
           </li>
           <li className='mb-5'>
-            <strong>StringSX</strong> (01/2023 - 01/2025 - 2 years) – Node.js, React, AWS, LLM<br/>
+            <strong>StringSX</strong> (01/2023 - 01/2025  [2 years]) – Node.js, React, AWS, LLM<br/>
             (Contract) Manaus-AM (Remote)<br/>
             Participated in various projects developing fullstack solutions with React, Angular, Node.js, NestJS, and Python. Worked with e-commerce integration via WooCommerce, LLMs for image data processing (Gemini), and AWS infrastructure deployment (EC2, S3, CloudFront). Automated environments with Docker and managed PostgreSQL databases.
           </li>
           <li>
-            <strong>Fatsus</strong> (06/2022 - 12/2022 - 6 months) – Angular, Python, SUS<br/>
+            <strong>Fatsus</strong> (06/2022 - 12/2022  [6 months]) – Angular, Python, SUS<br/>
             (Contract) Manaus-AM (Remote)<br/>
             Developed and maintained healthcare sector applications using Angular in the frontend and Node.js/Python in the backend. Worked on billing system integrations for SUS (Brazilian Universal Healthcare System) and continuous improvements for clinics and laboratories.
           </li>
