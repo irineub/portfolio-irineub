@@ -1,43 +1,82 @@
+'use client'
+
+import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
 import { BR } from 'country-flag-icons/react/3x2'
+import { MdEmail, MdContentCopy } from 'react-icons/md'
+import { FaMedium, FaLinkedin, FaGithub } from 'react-icons/fa6'
+import { useState } from 'react'
 
 export default function Page() {
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('irineutech2025@gmail.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section className="p-3">
-      <div className="flex gap-6 items-center mb-6">
-        <Image
-          src="/profile.png"
-          width={100}
-          height={100}
-          alt="Irineu Brito's profile picture"
-          className="rounded-full"
-        />
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">
-            Irineu Brito
-          </h1>
-          <h1>Fullstack Developer</h1>
-        </div>
-        <a href="/" className="text-sm text-blue-600 underline ml-auto flex items-center gap-1">
-          <BR className="w-4 h-4" />
-          PT
-        </a>
-      </div>
+      <div className="flex gap-6 items-start mb-6">
+        <div className="flex-1 align-center">
+          <div className="flex justify-between items-start gap-6">
+            <div className="flex flex-row gap-2">
+              <Image
+                src="/profile.png"
+                width={100}
+                height={100}
+                alt="Irineu Brito profile picture"
+                className="rounded-full"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-2xl font-bold tracking-tight">
+                  Irineu Brito
+                </h1>
+                <h1>Fullstack Developer</h1>
+              </div>
+            </div>
 
-      <section className="mb-6">
-        <h2 className="text-xl font-semibold">Contact</h2>
-        <div className="flex flex-col space-y-2">
-          <a href='mailto:irineutech2025@gmail.com' className="text-blue-600 hover:underline">
-            Email: irineutech2025@gmail.com
-          </a>
-          <a href='https://medium.com/@irineutech2025' className="text-blue-600 hover:underline">
-            Medium
-          </a>
-          <a href='https://www.linkedin.com/in/irineu-brito/' className="text-blue-600 hover:underline">
-            LinkedIn
-          </a>
+            <div className="flex flex-col space-y-2">
+
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaGithub className="w-4 h-4" />
+                <a href='https://github.com/irineub' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                  irineub
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaLinkedin className="w-4 h-4" />
+                <a href='https://www.linkedin.com/in/irineu-brito/' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                  irineu-brito
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaMedium className="w-4 h-4" />
+                <a href='https://medium.com/@irineutech2025' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                  @irineutech2025
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <MdEmail className="w-4 h-4" />
+                <button 
+                  onClick={copyToClipboard}
+                  className="text-blue-600 hover:underline text-sm flex items-center gap-2 relative"
+                >
+                  irineutech2025@gmail.com
+                  <MdContentCopy className="w-4 h-4" />
+                  {copied && <span className="absolute -right-16 text-green-500 text-xs whitespace-nowrap">Copied!</span>}
+                </button>
+              </div>
+            </div>
+
+            <a href="/" className="text-sm text-blue-600 underline flex items-center gap-1">
+              <BR className="w-4 h-4" />
+              PT
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold">About Me</h2>

@@ -1,44 +1,83 @@
+'use client'
+
 import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
 import { GB } from 'country-flag-icons/react/3x2'
+import { MdEmail, MdContentCopy } from 'react-icons/md'
+import { FaMedium, FaLinkedin, FaGithub } from 'react-icons/fa6'
+import { useState } from 'react'
 
 export default function Page() {
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('irineutech2025@gmail.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section className="p-3">
-      <div className="flex gap-6 items-center mb-6">
-        <Image
-          src="/profile.png"
-          width={100}
-          height={100}
-          alt="Foto de perfil de Irineu Brito"
-          className="rounded-full"
-        />
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight">
-            Irineu Brito
-          </h1>
-          <h1>Desenvolvedor Fullstack</h1>
+      <div className="flex gap-6 items-start mb-6">
+        <div className="flex-1 align-center">
+          <div className="flex justify-between items-start gap-6">
+            <div className="flex flex-row gap-2">
+              <Image
+                src="/profile.png"
+                width={100}
+                height={100}
+                alt="Foto de perfil de Irineu Brito"
+                className="rounded-full"
+              />
+              <div className="flex flex-col">
+                <h1 className="text-2xl font-bold tracking-tight">
+                  Irineu Brito
+                </h1>
+                <h1>Desenvolvedor Fullstack</h1>
+              </div>
+            </div>
+
+            <div className="flex flex-col space-y-2">
+
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaGithub className="w-4 h-4" />
+                <a href='https://github.com/irineub' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                  irineub
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaLinkedin className="w-4 h-4" />
+                <a href='https://www.linkedin.com/in/irineu-brito/' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                  irineu-brito
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaMedium className="w-4 h-4" />
+                <a href='https://medium.com/@irineutech2025' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                  @irineutech2025
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <MdEmail className="w-4 h-4" />
+                <button 
+                  onClick={copyToClipboard}
+                  className="text-blue-600 hover:underline text-sm flex items-center gap-2 relative"
+                >
+                  irineutech2025@gmail.com
+                  <MdContentCopy className="w-4 h-4" />
+                  {copied && <span className="absolute -right-16 text-green-500 text-xs whitespace-nowrap">Copiado!</span>}
+                </button>
+              </div>
+            </div>
+
+            <a href="/en" className="text-sm text-blue-600 underline flex items-center gap-1">
+              <GB className="w-4 h-4" />
+              EN
+            </a>
+          </div>
         </div>
-        <a href="/en" className="text-sm text-blue-600 underline ml-auto flex items-center gap-1">
-          <GB className="w-4 h-4" />
-          EN
-        </a>
       </div>
 
-      <section className="mb-6">
-        <h2 className="text-xl font-semibold">Contatos</h2>
-        <div className="flex flex-col space-y-2">
-          <a href='mailto:irineutech2025@gmail.com' className="text-blue-600 hover:underline">
-            E-mail: irineutech2025@gmail.com
-          </a>
-          <a href='https://medium.com/@irineutech2025' className="text-blue-600 hover:underline">
-            Medium
-          </a>
-          <a href='https://www.linkedin.com/in/irineu-brito/' className="text-blue-600 hover:underline">
-            LinkedIn
-          </a>
-        </div>
-      </section>
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Sobre Mim</h2>
         <p>
@@ -50,23 +89,23 @@ export default function Page() {
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
           <li className='mb-5'>
-            <strong>SIDIA - Instituto de Ciencia e Tecnologia</strong> (02/2025 - Atual ) – Python, NLP, LLMs, IA (Estágio) <br/> Meio-Periodo -
-            Manaus-AM (Presencial)<br/>
+            <strong>SIDIA - Instituto de Ciencia e Tecnologia</strong> (02/2025 - Atual ) – Python, NLP, LLMs, IA (Estágio) <br /> Meio-Periodo -
+            Manaus-AM (Presencial)<br />
             Atuo no desenvolvimento de ferramentas internas em Python voltadas à automação de processos e fluxos de trabalho. Construí pipelines de dados para alimentar modelos de linguagem (LLMs), aplicando técnicas de NLP e análise de dados com Pandas. Participei da concepção de uma plataforma integrada de IA, além de realizar ajustes finos em modelos para respostas contextuais.
           </li>
           <li className='mb-5'>
-            <strong>Vizo.dev</strong> (01/2025 - 04/2025 [4 meses]) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
-          <strong>(Free-lance PJ) </strong>       Jerusalém, Israel (Remoto)<br/>
+            <strong>Vizo.dev</strong> (01/2025 - 04/2025 [4 meses]) – Fullstack (NestJS, Angular, GCP, i18n)<br />
+            <strong>(Free-lance PJ) </strong>       Jerusalém, Israel (Remoto)<br />
             Desenvolvi aplicações fullstack utilizando Angular, NestJS e Typescript. Integrei serviços de mensageria (Sendinblue), gerenciei recursos no GCP e implementei funcionalidades de internacionalização (i18n) para suportar múltiplos idiomas. Colaborei com equipes internacionais em ambiente ágil e remoto.
           </li>
           <li className='mb-5'>
-            <strong>StringSX</strong> (01/2023 - 01/2025 [2 anos]) – Node.js, React, AWS, LLM<br/>
-           (Contrato PJ) Manaus-AM (Remoto)<br/>
+            <strong>StringSX</strong> (01/2023 - 01/2025 [2 anos]) – Node.js, React, AWS, LLM<br />
+            (Contrato PJ) Manaus-AM (Remoto)<br />
             Participei de diversos projetos desenvolvendo soluções fullstack com React, Angular, Node.js, NestJS e Python. Trabalhei com integração de e-commerce via WooCommerce, LLMs para processamento de dados com imagens (Gemini) e deploy de infraestrutura em AWS (EC2, S3, CloudFront). Automatizei ambientes com Docker e gerenciei banco de dados PostgreSQL.
           </li>
           <li>
-            <strong>Fatsus</strong> (06/2022 - 12/2022 [6 meses]) – Angular, Python, SUS<br/>
-            (Contrato PJ) Manaus-AM (Remoto)<br/>
+            <strong>Fatsus</strong> (06/2022 - 12/2022 [6 meses]) – Angular, Python, SUS<br />
+            (Contrato PJ) Manaus-AM (Remoto)<br />
             Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas de faturamento para o (SUS) e em melhorias contínuas para clínicas e laboratórios.
           </li>
         </ul>
@@ -105,7 +144,7 @@ export default function Page() {
         </ul>
       </section>
 
-     
+
     </section>
   )
 }
