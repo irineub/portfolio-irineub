@@ -25,7 +25,16 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ views })
   } catch (error) {
-    console.error('Error managing views:', error)
-    return NextResponse.json({ views: 0 }, { status: 500 })
+    console.error('Error in /api/views:', error)
+    console.error('Request path:', path)
+    console.error('Database URL:', process.env.POSTGRES_PRISMA_URL ? 'Configured' : 'Missing')
+    
+    return NextResponse.json(
+      { 
+        error: 'Failed to manage views',
+        details: error instanceof Error ? error.message : 'Unknown error'
+      }, 
+      { status: 500 }
+    )
   }
 } 
