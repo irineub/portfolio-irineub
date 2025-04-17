@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 export async function GET() {
   try {
-    const response = await fetch('https://cloud.umami.is/api/websites/9c2388f8-2160-467b-ac45-16d8bf6e899b/stats', {
+    const response = await fetch('https://cloud.umami.is/api/websites/9c2388f8-2160-467b-ac45-16d8bf6e899b/pageviews', {
       headers: {
         'Authorization': `Bearer ${process.env.UMAMI_API_KEY}`
       }
