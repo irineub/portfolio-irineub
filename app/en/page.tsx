@@ -20,7 +20,7 @@ export default function Page() {
     <section className="p-3">
       <div className="flex gap-6 items-start mb-6">
         <div className="flex-1 align-center">
-          <div className="flex justify-between items-start gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-6">
             <div className="flex flex-row gap-2">
               <Image
                 src="/profile.png"
@@ -37,8 +37,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="flex flex-col space-y-2">
-
+            <div className="flex flex-col space-y-2 w-full md:w-auto">
               <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
                 <FaGithub className="w-4 h-4" />
                 <a href='https://github.com/irineub' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
@@ -70,10 +69,12 @@ export default function Page() {
               </div>
             </div>
 
-            <a href="/" className="text-sm text-blue-600 underline flex items-center gap-1">
-              <BR className="w-4 h-4" />
-              PT
-            </a>
+            <div className="absolute top-3 right-3 md:relative md:top-0 md:right-0">
+              <a href="/" className="text-sm text-blue-600 underline flex items-center gap-1">
+                <BR className="w-4 h-4" />
+                PT
+              </a>
+            </div>
           </div>
         </div>
       </div>
