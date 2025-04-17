@@ -28,7 +28,7 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Sobre Mim</h2>
         <p>
-          Desenvolvedor Fullstack bilíngue com sólida experiência em frontend e backend modernos, incluindo Angular, NestJS, React e Python. Entrego soluções escaláveis com foco em performance, IA e cloud computing.
+          Desenvolvedor Fullstack bilíngue com sólida experiência de mais de 3 anosem frontend e backend modernos, incluindo Angular, NestJS, React e Python. Entrego soluções escaláveis com foco em performance, IA e cloud computing.
         </p>
       </section>
 
@@ -36,22 +36,22 @@ export default function Page() {
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
           <li className='mb-5'>
-            <strong>SIDIA - Instituto de Ciencia e Tecnologia</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA (Estágio) <br/> Meio-Periodo -
+            <strong>SIDIA - Instituto de Ciencia e Tecnologia</strong> (02/2025 - Atual ) – Python, NLP, LLMs, IA (Estágio) <br/> Meio-Periodo -
             Manaus-AM (Presencial)<br/>
             Atuo no desenvolvimento de ferramentas internas em Python voltadas à automação de processos e fluxos de trabalho. Construí pipelines de dados para alimentar modelos de linguagem (LLMs), aplicando técnicas de NLP e análise de dados com Pandas. Participei da concepção de uma plataforma integrada de IA, além de realizar ajustes finos em modelos para respostas contextuais.
           </li>
           <li className='mb-5'>
-            <strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
+            <strong>Vizo.dev</strong> (01/2025 - 04/2025 - 4 meses) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
   (Free-lance PJ)         Jerusalém, Israel (Remoto)<br/>
             Desenvolvi aplicações fullstack utilizando Angular, NestJS e Typescript. Integrei serviços de mensageria (Sendinblue), gerenciei recursos no GCP e implementei funcionalidades de internacionalização (i18n) para suportar múltiplos idiomas. Colaborei com equipes internacionais em ambiente ágil e remoto.
           </li>
           <li className='mb-5'>
-            <strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM<br/>
+            <strong>StringSX</strong> (01/2023 - 01/2025 - 2 anos) – Node.js, React, AWS, LLM<br/>
            (Contrato PJ) Manaus-AM (Remoto)<br/>
             Participei de diversos projetos desenvolvendo soluções fullstack com React, Angular, Node.js, NestJS e Python. Trabalhei com integração de e-commerce via WooCommerce, LLMs para processamento de dados com imagens (Gemini) e deploy de infraestrutura em AWS (EC2, S3, CloudFront). Automatizei ambientes com Docker e gerenciei banco de dados PostgreSQL.
           </li>
           <li>
-            <strong>Fatsus</strong> (06/2022 - 12/2022) – Angular, Python, SUS<br/>
+            <strong>Fatsus</strong> (06/2022 - 12/2022 - 6 meses) – Angular, Python, SUS<br/>
             (Contrato PJ) Manaus-AM (Remoto)<br/>
             Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas de faturamento para o (SUS) e em melhorias contínuas para clínicas e laboratórios.
           </li>
