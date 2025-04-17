@@ -1,15 +1,27 @@
 import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
 
 export default function Page() {
   return (
-    <section className="p-4">
-      <div className="flex justify-between items-center mb-6">
+    <section className="p-3">
+      <div className="flex gap-6 items-center mb-6">
+        <Image
+          src="/profile.png"
+          width={100}
+          height={100}
+          alt="Foto de perfil de Irineu Brito"
+          className="rounded-full"
+        />
+        <div>
         <h1 className="text-2xl font-bold tracking-tight">
           Irineu Brito
         </h1>
-        <a href="/en" className="text-sm text-blue-600 underline">
+        <h1>Desenvolvedor Fullstack</h1>
+        </div>
+
+        {/* <a href="/en" className="text-sm text-blue-600 underline">
           EN
-        </a>
+          </a> */}
       </div>
 
       <section className="mb-6">
@@ -22,17 +34,17 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
-          <li>
-            <strong>SIDIA</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA (Estágio) <br/> Meio-Periodo -
+          <li className='mb-5'>
+            <strong>SIDIA - Instituto de Ciencia e Tecnologia</strong> (02/2025 - Atual) – Python, NLP, LLMs, IA (Estágio) <br/> Meio-Periodo -
             Manaus-AM (Presencial)<br/>
             Atuo no desenvolvimento de ferramentas internas em Python voltadas à automação de processos e fluxos de trabalho. Construí pipelines de dados para alimentar modelos de linguagem (LLMs), aplicando técnicas de NLP e análise de dados com Pandas. Participei da concepção de uma plataforma integrada de IA, além de realizar ajustes finos em modelos para respostas contextuais.
           </li>
-          <li>
+          <li className='mb-5'>
             <strong>Vizo.dev</strong> (01/2025 - 04/2025) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
   (Free-lance PJ)         Jerusalém, Israel (Remoto)<br/>
             Desenvolvi aplicações fullstack utilizando Angular, NestJS e Typescript. Integrei serviços de mensageria (Sendinblue), gerenciei recursos no GCP e implementei funcionalidades de internacionalização (i18n) para suportar múltiplos idiomas. Colaborei com equipes internacionais em ambiente ágil e remoto.
           </li>
-          <li>
+          <li className='mb-5'>
             <strong>StringSX</strong> (01/2023 - 01/2025) – Node.js, React, AWS, LLM<br/>
            (Contrato PJ) Manaus-AM (Remoto)<br/>
             Participei de diversos projetos desenvolvendo soluções fullstack com React, Angular, Node.js, NestJS e Python. Trabalhei com integração de e-commerce via WooCommerce, LLMs para processamento de dados com imagens (Gemini) e deploy de infraestrutura em AWS (EC2, S3, CloudFront). Automatizei ambientes com Docker e gerenciei banco de dados PostgreSQL.
