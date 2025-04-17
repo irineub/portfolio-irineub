@@ -21,7 +21,7 @@ export default function Page() {
       <div className="flex gap-6 items-start mb-6">
         <div className="flex-1 align-center">
           <div className="flex flex-col md:flex-row justify-between items-start gap-6">
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-2 items-center">
               <Image
                 src="/profile.png"
                 width={100}
@@ -29,7 +29,7 @@ export default function Page() {
                 alt="Irineu Brito profile picture"
                 className="rounded-full"
               />
-              <div className="flex flex-col">
+              <div className="flex flex-col justify-center">
                 <h1 className="text-2xl font-bold tracking-tight">
                   Irineu Brito
                 </h1>
