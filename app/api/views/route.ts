@@ -1,21 +1,28 @@
 import { NextResponse } from 'next/server'
+import { prisma } from '@/lib/prisma'
 
-export async function GET() {
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url)
+  const path = searchParams.get('path') || '/'
+
   try {
-    const response = await fetch('https://cloud.umami.is/api/websites/9c2388f8-2160-467b-ac45-16d8bf6e899b/pageviews', {
-      headers: {
-        'Authorization': `Bearer ${process.env.UMAMI_API_KEY}`
-      }
+    // Registra uma nova visualização
+    await prisma.pageView.create({
+      data: {
+        path,
+      },
     })
 
-    if (!response.ok) {
-      throw new Error('Failed to fetch views')
-    }
+    // Conta total de visualizações para o caminho
+    const views = await prisma.pageView.count({
+      where: {
+        path,
+      },
+    })
 
-    const data = await response.json()
-    return NextResponse.json({ views: data.pageviews.value })
+    return NextResponse.json({ views })
   } catch (error) {
-    console.error('Error fetching views:', error)
+    console.error('Error managing views:', error)
     return NextResponse.json({ views: 0 }, { status: 500 })
   }
 } 

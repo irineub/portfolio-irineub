@@ -20,14 +20,14 @@ function ArrowIcon() {
 export default function Footer() {
   return (
     <footer className="mt-8 pb-8 text-sm text-center text-gray-600 dark:text-gray-400">
+      <p className="mt-2">
+        © {new Date().getFullYear()} Irineu Brito. Todos os direitos reservados.
+      </p>
       <div className="flex justify-center items-center gap-1">
         <span>•</span>
         <ViewCounter />
         <span>•</span>
       </div>
-      <p className="mt-2">
-        © {new Date().getFullYear()} Irineu Brito. Todos os direitos reservados.
-      </p>
     </footer>
   )
 }
