@@ -1,5 +1,6 @@
 import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
+import { GB } from 'country-flag-icons/react/3x2'
 
 export default function Page() {
   return (
@@ -13,15 +14,15 @@ export default function Page() {
           className="rounded-full"
         />
         <div>
-        <h1 className="text-2xl font-bold tracking-tight">
-          Irineu Brito
-        </h1>
-        <h1>Desenvolvedor Fullstack</h1>
+          <h1 className="text-2xl font-bold tracking-tight">
+            Irineu Brito
+          </h1>
+          <h1>Desenvolvedor Fullstack</h1>
         </div>
-
-        {/* <a href="/en" className="text-sm text-blue-600 underline">
+        <a href="/en" className="text-sm text-blue-600 underline ml-auto flex items-center gap-1">
+          <GB className="w-4 h-4" />
           EN
-          </a> */}
+        </a>
       </div>
 
       <section className="mb-6">
