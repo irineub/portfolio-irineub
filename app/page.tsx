@@ -26,6 +26,20 @@ export default function Page() {
       </div>
 
       <section className="mb-6">
+        <h2 className="text-xl font-semibold">Contatos</h2>
+        <div className="flex flex-col space-y-2">
+          <a href='mailto:irineutech2025@gmail.com' className="text-blue-600 hover:underline">
+            E-mail: irineutech2025@gmail.com
+          </a>
+          <a href='https://medium.com/@irineutech2025' className="text-blue-600 hover:underline">
+            Medium
+          </a>
+          <a href='https://www.linkedin.com/in/irineu-brito/' className="text-blue-600 hover:underline">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+      <section className="mb-6">
         <h2 className="text-xl font-semibold">Sobre Mim</h2>
         <p>
           Desenvolvedor Fullstack bilíngue com sólida experiência de mais de 3 anos em frontend e backend modernos, incluindo Angular, NestJS, React e Python. Entrego soluções escaláveis com foco em performance, IA e cloud computing.
