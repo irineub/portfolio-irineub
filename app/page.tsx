@@ -6,15 +6,27 @@ import { GB } from 'country-flag-icons/react/3x2'
 import { MdEmail, MdContentCopy } from 'react-icons/md'
 import { FaMedium, FaLinkedin, FaGithub } from 'react-icons/fa6'
 import { useState } from 'react'
+import { useEffect } from 'react'
+import { useRouter } from 'next/compat/router'
 
 export default function Page() {
   const [copied, setCopied] = useState(false);
+  const router = useRouter()
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText('irineutech2025@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
+
+  useEffect(() => {
+    const language = navigator.language || 'pt-BR'
+    if (router && !router.isReady) {
+      if (!language.includes('pt')) {
+        router.push('en')
+      }
+    }
+  }, [router])
 
   return (
     <section className="p-3">
