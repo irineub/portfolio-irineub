@@ -137,6 +137,11 @@ export default function Page() {
       </section>
 
       <section className="mb-6">
+        <h2 className="text-xl font-semibold">Courses</h2>
+        <p>CS50's, Computer Science – Harvard University (05/2025 - 12/2025)</p>
+      </section>
+
+      <section className="mb-6">
         <h2 className="text-xl font-semibold">Languages</h2>
         <ul className="list-disc ml-5">
           <li>Portuguese (Native)</li>
