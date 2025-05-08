@@ -8,6 +8,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 import Script from 'next/script'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -44,6 +46,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const router = useRouter()
+
+  useEffect(() => {
+    // Get the user's language from the browser
+    const language = navigator.language || 'pt-BR'
+
+    // Check if the language is not Portuguese (pt or pt-BR)
+    if (!language.includes('pt')) {
+      // If it's not Portuguese, redirect to /en
+      router.push('/en')
+    }
+  }, [router])
+
   return (
     <html
       lang="en"
