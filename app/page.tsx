@@ -5,8 +5,7 @@ import Image from 'next/image'
 import { GB } from 'country-flag-icons/react/3x2'
 import { MdEmail, MdContentCopy } from 'react-icons/md'
 import { FaMedium, FaLinkedin, FaGithub } from 'react-icons/fa6'
-import { useState } from 'react'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/compat/router'
 
 export default function Page() {
@@ -45,7 +44,7 @@ export default function Page() {
                 <h1 className="text-2xl font-bold tracking-tight">
                   Irineu Brito
                 </h1>
-                <h1>Desenvolvedor Fullstack</h1>
+                <h1>Desenvolvedor Fullstack & IA</h1>
               </div>
             </div>
 
@@ -94,7 +93,13 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Sobre Mim</h2>
         <p>
-          Desenvolvedor Fullstack bilíngue com sólida experiência de mais de 3 anos em frontend e backend modernos, incluindo Angular, NestJS, React e Python. Entrego soluções escaláveis com foco em performance, IA e cloud computing.
+          Engenheiro de Inteligência Artificial e Backend com mais de 3 anos de experiência
+          desenvolvendo aplicações web escaláveis para empresas nacionais e internacionais.
+          Experiente em Python, Node.js, NestJS e tecnologias de IA como CrewAI, LangGraph
+          e sistemas Multiagentes, com forte atuação em projetos envolvendo NLP, RAG e
+          LLMs. Experiência sólida com bancos de dados SQL e NoSQL, infraestrutura em
+          nuvem (AWS e GCP), Docker e práticas modernas de DevOps. Fluente em inglês
+          (nível C2) e adaptável a ambientes remotos, colaborativos e multiculturais.
         </p>
       </section>
 
@@ -102,24 +107,29 @@ export default function Page() {
         <h2 className="text-xl font-semibold">Experiência Profissional</h2>
         <ul className="list-disc ml-5">
           <li className='mb-5'>
-            <strong>SIDIA - Instituto de Ciencia e Tecnologia</strong> (02/2025 - Atual ) – Python, NLP, LLMs, IA (Estágio) <br /> Meio-Periodo -
-            Manaus-AM (Presencial)<br />
-            Atuo no desenvolvimento de ferramentas internas em Python voltadas à automação de processos e fluxos de trabalho. Construí pipelines de dados para alimentar modelos de linguagem (LLMs), aplicando técnicas de NLP e análise de dados com Pandas. Participei da concepção de uma plataforma integrada de IA, além de realizar ajustes finos em modelos para respostas contextuais.
+            <strong>SIDIA - Instituto de Ciência e Tecnologia</strong> (Fev 2025 - Atual)<br />
+            <em>Python Development AI – Estágio</em><br />
+            Desenvolvimento de ferramentas internas para otimizar fluxos e processos com IA;
+            construção de sistemas multiagentes com CrewAI e LangGraph, aplicação de NLP com Pandas,
+            soluções RAG e colaboração com engenheiros em projetos com grandes volumes de dados.
           </li>
           <li className='mb-5'>
-            <strong>Vizo.dev</strong> (01/2025 - 04/2025 [4 meses]) – Fullstack (NestJS, Angular, GCP, i18n)<br />
-            <strong>(Free-lance PJ) </strong>       Jerusalém, Israel (Remoto)<br />
-            Desenvolvi aplicações fullstack utilizando Angular, NestJS e Typescript. Integrei serviços de mensageria (Sendinblue), gerenciei recursos no GCP e implementei funcionalidades de internacionalização (i18n) para suportar múltiplos idiomas. Colaborei com equipes internacionais em ambiente ágil e remoto.
+            <strong>VIZO</strong> (Jan 2025 - Abr 2025)<br />
+            <em>Fullstack Developer (Freelancer)</em><br />
+            Desenvolvimento com Angular, NestJS, integração com Firebase e GCP, envio de e-mails com Sendinblue
+            e implementação de suporte multilíngue com i18n para aplicações internacionais.
           </li>
           <li className='mb-5'>
-            <strong>StringSX</strong> (01/2023 - 01/2025 [2 anos]) – Node.js, React, AWS, LLM<br />
-            (Contrato PJ) Manaus-AM (Remoto)<br />
-            Participei de diversos projetos desenvolvendo soluções fullstack com React, Angular, Node.js, NestJS e Python. Trabalhei com integração de e-commerce via WooCommerce, LLMs para processamento de dados com imagens (Gemini) e deploy de infraestrutura em AWS (EC2, S3, CloudFront). Automatizei ambientes com Docker e gerenciei banco de dados PostgreSQL.
+            <strong>StringSX</strong> (Jan 2023 - Jan 2025)<br />
+            <em>Fullstack Developer</em><br />
+            Desenvolvimento de soluções usando React, Angular, Node.js e NestJS; integração com WooCommerce;
+            uso de LLMs como Gemini para processamento de imagens; deploy na AWS e automação com Docker.
           </li>
           <li>
-            <strong>Fatsus</strong> (06/2022 - 12/2022 [6 meses]) – Angular, Python, SUS<br />
-            (Contrato PJ) Manaus-AM (Remoto)<br />
-            Desenvolvi e mantive aplicações voltadas ao setor da saúde, utilizando Angular no frontend e Node.js/Python no backend. Atuei na integração com sistemas de faturamento para o (SUS) e em melhorias contínuas para clínicas e laboratórios.
+            <strong>Fatsus</strong> (Jun 2022 - Dez 2022)<br />
+            <em>Fullstack Developer</em><br />
+            Desenvolvimento e manutenção de sistemas de saúde com Angular e Node.js; backend em Python;
+            integração com sistemas legados e com o SUS; foco em segurança e estabilidade.
           </li>
         </ul>
       </section>
@@ -127,11 +137,15 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Skills Técnicas</h2>
         <ul className="list-disc ml-5">
-          <li>Frontend: HTML, CSS, JavaScript, Angular, React, Redux, Styled Components, SASS, RXJS, Material</li>
-          <li>Backend: Node.js, NestJS, Python, FastAPI, TypeORM, Sequelize, Prisma, SQLAlchemy</li>
-          <li>Bancos de Dados: PostgreSQL, MongoDB, Firebase</li>
-          <li>DevOps & Infraestrutura: AWS (EC2, S3), GCP, Docker, VPS, Git, GitHub, Elastic</li>
-          <li>Mensageria: Sendinblue/Brevo</li>
+          <li><strong>Linguagens:</strong> Python, JavaScript, TypeScript</li>
+          <li><strong>Frontend:</strong> Angular, React.js</li>
+          <li><strong>Backend:</strong> Node.js, NestJS, Express.js, FastAPI</li>
+          <li><strong>Bancos de Dados:</strong> PostgreSQL (Sequelize, TypeORM), MongoDB (Mongoose), MySQL, Firebase</li>
+          <li><strong>Testes:</strong> Jest, Pytest</li>
+          <li><strong>APIs:</strong> RESTful, WebSockets, Swagger/OpenAPI</li>
+          <li><strong>DevOps & Infra:</strong> AWS, GCP, Docker, VPS, Git, GitHub</li>
+          <li><strong>IA & Dados:</strong> CrewAI, LangGraph, LLMs, NLP, RAG, Prompt Engineering, Pandas</li>
+          <li><strong>Boas Práticas:</strong> Clean Code, SOLID, Scrum, Jira</li>
         </ul>
       </section>
 
@@ -145,24 +159,17 @@ export default function Page() {
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Educação</h2>
-        <p>Bacharelado em Engenharia de Software – Universidade Anhanguera (2023 - 2026)</p>
-      </section>
-
-      <section className="mb-6">
-        <h2 className="text-xl font-semibold">Cursos</h2>
-        <p>CS50's, Computer Science – Harvard University (05/2025 - 12/2025)</p>
+        <p>Bacharelado em Engenharia de Software – Universidade Anhanguera (Jan 2023 - Jun 2026)</p>
       </section>
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Idiomas</h2>
         <ul className="list-disc ml-5">
           <li>Português (Nativo)</li>
-          <li>Inglês (C2 – Proficiente)</li>
+          <li>Inglês (Fluente – C2 Proficiente)</li>
           <li>Espanhol (Básico)</li>
         </ul>
       </section>
-
-
     </section>
   )
 }
