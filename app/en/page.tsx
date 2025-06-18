@@ -33,7 +33,7 @@ export default function Page() {
                 <h1 className="text-2xl font-bold tracking-tight">
                   Irineu Brito
                 </h1>
-                <h1>Fullstack Developer</h1>
+                <h1>AI & Fullstack Developer</h1>
               </div>
             </div>
 
@@ -82,7 +82,7 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">About Me</h2>
         <p>
-          Bilingual Fullstack Developer with over 3 years of solid experience in modern frontend and backend development, including Angular, NestJS, React, and Python. I deliver scalable solutions focusing on performance, AI, and cloud computing.
+          AI and Backend Engineer with 3+ years of experience building scalable web applications for national and international companies. Proficient in Python, Node.js, NestJS, and modern AI technologies such as CrewAI, LangGraph, and Multi-Agent Systems. Strong background in NLP, RAG, and LLM-based solutions. Skilled with SQL/NoSQL databases, cloud infrastructure (AWS, GCP), Docker, and DevOps practices. Fluent in English (C2) and experienced in remote, agile, and multicultural teams.
         </p>
       </section>
 
@@ -90,24 +90,24 @@ export default function Page() {
         <h2 className="text-xl font-semibold">Professional Experience</h2>
         <ul className="list-disc ml-5">
           <li className='mb-5'>
-            <strong>SIDIA - Institute of Science and Technology</strong> (Feb 2025 - Present) – Python, NLP, LLMs, AI (Internship)<br/>
-            Part-time - Manaus-AM, Brazil (On-site)<br/>
-            Working on developing internal Python tools focused on process automation and workflows. Built data pipelines to feed language models (LLMs), applying NLP techniques and data analysis with Pandas. Participated in the conception of an integrated AI platform, as well as fine-tuning models for contextual responses.
+            <strong>SIDIA – Institute of Science and Technology</strong> (Feb 2025 – Present)<br />
+            <em>Python Developer – AI Internship</em><br />
+            Built internal tools to automate workflows using AI; developed advanced multi-agent systems with CrewAI and LangGraph; implemented NLP pipelines with Pandas and contributed to RAG-based solutions for enterprise use.
           </li>
           <li className='mb-5'>
-            <strong>Vizo.dev</strong> (Jan 2025 - Apr 2025 [4 months]) – Fullstack (NestJS, Angular, GCP, i18n)<br/>
-            <strong>(Freelance)</strong> Jerusalem, Israel (Remote)<br/>
-            Developed fullstack applications using Angular, NestJS, and TypeScript. Integrated messaging services (Sendinblue), managed GCP resources, and implemented internationalization (i18n) features to support multiple languages. Collaborated with international teams in an agile and remote environment.
+            <strong>VIZO</strong> (Jan 2025 – Apr 2025)<br />
+            <em>Fullstack Developer – Freelancer</em><br />
+            Developed fullstack applications using Angular and NestJS; implemented Sendinblue messaging and GCP services; supported internationalization (i18n) for multilingual platforms; worked remotely with global teams.
           </li>
           <li className='mb-5'>
-            <strong>StringSX</strong> (Jan 2023 - Jan 2025 [2 years]) – Node.js, React, AWS, LLM<br/>
-            (Contract) Manaus-AM, Brazil (Remote)<br/>
-            Participated in various projects developing fullstack solutions with React, Angular, Node.js, NestJS, and Python. Worked with e-commerce integration via WooCommerce, LLMs for image data processing (Gemini), and AWS infrastructure deployment (EC2, S3, CloudFront). Automated environments with Docker and managed PostgreSQL databases.
+            <strong>StringSX</strong> (Jan 2023 – Jan 2025)<br />
+            <em>Fullstack Developer</em><br />
+            Delivered fullstack solutions using React, Angular, Node.js, NestJS; integrated WooCommerce; developed AI solutions with Gemini for image data processing; deployed to AWS and automated environments with Docker.
           </li>
           <li>
-            <strong>Fatsus</strong> (Jun 2022 - Dec 2022 [6 months]) – Angular, Python, SUS<br/>
-            (Contract) Manaus-AM, Brazil (Remote)<br/>
-            Developed and maintained healthcare sector applications using Angular in the frontend and Node.js/Python in the backend. Worked on billing system integrations for SUS (Brazilian Universal Healthcare System) and continuous improvements for clinics and laboratories.
+            <strong>Fatsus</strong> (Jun 2022 – Dec 2022)<br />
+            <em>Fullstack Developer</em><br />
+            Built and maintained healthcare systems using Angular and Python; integrated SUS billing systems; enhanced legacy systems and ensured data security and stability.
           </li>
         </ul>
       </section>
@@ -115,11 +115,15 @@ export default function Page() {
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Technical Skills</h2>
         <ul className="list-disc ml-5">
-          <li>Frontend: HTML, CSS, JavaScript, Angular, React, Redux, Styled Components, SASS, RXJS, Material</li>
-          <li>Backend: Node.js, NestJS, Python, FastAPI, TypeORM, Sequelize, Prisma, SQLAlchemy</li>
-          <li>Databases: PostgreSQL, MongoDB, Firebase</li>
-          <li>DevOps & Infrastructure: AWS (EC2, S3), GCP, Docker, VPS, Git, GitHub, Elastic</li>
-          <li>Messaging: Sendinblue/Brevo</li>
+          <li><strong>Languages:</strong> Python, JavaScript, TypeScript</li>
+          <li><strong>Frontend:</strong> Angular, React</li>
+          <li><strong>Backend:</strong> Node.js, NestJS, Express.js, FastAPI</li>
+          <li><strong>Databases:</strong> PostgreSQL (Sequelize, TypeORM), MongoDB (Mongoose), MySQL, Firebase</li>
+          <li><strong>Testing:</strong> Jest, Pytest</li>
+          <li><strong>APIs:</strong> REST, WebSockets, OpenAPI/Swagger</li>
+          <li><strong>Infrastructure:</strong> AWS, GCP, Docker, VPS, Git, GitHub</li>
+          <li><strong>AI & Data:</strong> CrewAI, LangGraph, NLP, RAG, LLMs, Prompt Engineering, Pandas</li>
+          <li><strong>Best Practices:</strong> Clean Code, SOLID, Agile (Scrum, Jira)</li>
         </ul>
       </section>
 
@@ -133,12 +137,12 @@ export default function Page() {
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Education</h2>
-        <p>Bachelor's Degree in Software Engineering – Anhanguera University (2023 - 2026)</p>
+        <p>Bachelor's Degree in Software Engineering – Anhanguera University (2023 – 2026)</p>
       </section>
 
       <section className="mb-6">
         <h2 className="text-xl font-semibold">Courses</h2>
-        <p>CS50's, Computer Science – Harvard University (05/2025 - 12/2025)</p>
+        <p>CS50 – Computer Science, Harvard University (May 2025 – Dec 2025)</p>
       </section>
 
       <section className="mb-6">
@@ -151,4 +155,4 @@ export default function Page() {
       </section>
     </section>
   )
-} 
+}
