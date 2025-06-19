@@ -4,7 +4,7 @@ import { BlogPosts } from 'app/components/posts'
 import Image from 'next/image'
 import { GB } from 'country-flag-icons/react/3x2'
 import { MdEmail, MdContentCopy } from 'react-icons/md'
-import { FaMedium, FaLinkedin, FaGithub } from 'react-icons/fa6'
+import { FaMedium, FaLinkedin, FaGithub, FaFilePdf  } from 'react-icons/fa6'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/compat/router'
 
@@ -65,6 +65,12 @@ export default function Page() {
                 <FaMedium className="w-4 h-4" />
                 <a href='https://medium.com/@irineutech2025' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
                   @irineutech2025
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
+                <FaFilePdf  className="w-4 h-4" />
+                <a href='https://raw.githubusercontent.com/irineub/irineub/refs/heads/main/Curriculo%20Irineu%20Brito%20-%20IA.pdf' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                    Baixar Curriculo em PDF
                 </a>
               </div>
               <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
