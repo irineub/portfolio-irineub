@@ -69,7 +69,7 @@ export default function Page() {
               </div>
               <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-200">
                 <FaFilePdf  className="w-4 h-4" />
-                <a href='https://raw.githubusercontent.com/irineub/irineub/refs/heads/main/Curriculo%20Irineu%20Brito%20-%20IA.pdf' className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                <a href='https://raw.githubusercontent.com/irineub/irineub/refs/heads/main/Curriculo%20Irineu%20Brito%20-%20IA.pdf' className="text-blue-600 hover:underline text-sm" rel="noopener noreferrer">
                     Baixar Curriculo em PDF
                 </a>
               </div>
